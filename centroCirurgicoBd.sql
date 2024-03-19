@@ -54,3 +54,14 @@ create table tbl_medico(
     foreign key (id_medico) references tbl_medico(id_medico),
     foreign key (id_sala) references tbl_sala(id_sala)
  );
+
+ create table tbl_paciente_bkp(
+	id_paciente int unsigned auto_increment primary key,
+    nome_paciente varchar(500) not null,
+    telefone_paciente varchar(10),
+    celular_paciente varchar(11) not null,
+    email_paciente varchar(100) not null,
+    nome_responsavel varchar(500) not null,
+    telefone_responsavel varchar(11) not null,
+    date_delete datetime not null
+);
